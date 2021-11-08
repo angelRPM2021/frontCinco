@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.cuerpo{
+  font-family: sans-serif;
+  padding: 30px 20px 0;
+}
+.nav-enlace{
+  display: inline-block;  
+  background: black;
+  color: aliceblue; 
+  padding:  10px 10px;
+  text-decoration:none ;
+ }
+
+ .nav-enlace:hover{
+     background: rosybrown;
+ }
+ .nav{
+     display: flex;
+     justify-content: space-between;
+     background: royalblue;
+     padding: 10px 10px;
+ }
+ .nav-menu{
+     display: flex;
+     margin-right: 30px;
+     list-style: none;
+ }
+ .nav-menu-item{
+    font-size: 18px; 
+    margin:0 10px;
+    line-height: 30px;
+    text-transform: uppercase;    
+    width: max-content;
+}
+.tabla {
+    width: 100%;
+    border: 1px solid #000;
+ }
+ th, td {
+    width: 25%;
+    text-align: left;
+    vertical-align: top;
+    border: 1px solid #000;
+ }
+#ventanaReportes
+{
+    display: none;
+}
+#ventanaListarCategory{
+    display: none;
+}
+
+#ventanaListarCabin
+ {
+    display: none;
+}
+#ventana{
+    display: none;
+}
+
+    #ventanaBuscar{
+        display: none;
+
+    }
+    #ventanaListarCliente{
+        display: none;
+    }
+
+   #cabin{
+       display: none;
+   }
+
+    #mensaje{
+        display: none;
+    }
+ #ventanaListaMensaje{
+     display: none;
+ }   
+#VentanaReservacion{
+    
+    display: none;
+}
+
+#ActualizarReservacion{
+    display: none;
+}
+    ul, ol {
+        list-style:none;
+    }
+    
+    
+    .nav > li {
+        float:left;
+    }
+    
+    .nav li a {
+        background-color:#000;
+        color:#fff;
+        text-decoration:none;
+        padding:10px 12px;
+        display:block;
+    }
+    
+    .nav li a:hover {
+        background-color:#434343;
+    }
+    
+    .nav li ul {
+        display:none;
+        position:absolute;
+        min-width:140px;
+    }
+    
+    .nav li:hover > ul {
+        display:block;
+    }
+    
+    .nav li ul li {
+        position:relative;
+    }
+    
+    .nav li ul li ul {
+        right:-140px;
+        top:0px;
+    }
+
+
+    
