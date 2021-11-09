@@ -1,7 +1,7 @@
 function AutoIniciarCliente(){
     
     $.ajax({
-        url:"http://localhost:8080/api/Client/all",
+        url:"http://144.22.57.199:8080/api/Client/all",
         type:"GET",
         datatype:"JSON",
         success:function(respuesta){
@@ -18,7 +18,7 @@ function AutoIniciarCliente(){
 function autoIniciarCabin(){
 
     $.ajax({
-        url:"http://localhost:8080/api/Cabin/all",
+        url:"http://144.22.57.199:8080/api/Cabin/all",
         type:"GET",
         datatype:"JSON",
         success:function(respuesta){
@@ -37,7 +37,7 @@ function autoIniciarCabin(){
 function autoInicioCategoria(){
     console.log("se esta ejecutando")
     $.ajax({
-        url:"http://localhost:8080/api/Category/all",
+        url:"http://144.22.57.199:8080/api/Category/all",
         type:"GET",
         datatype:"JSON",
         success:function(respuesta){
@@ -54,7 +54,7 @@ function autoInicioCategoria(){
 //Manejador GET
 function traerInformacionCabin() {
     $.ajax({
-        url:"http://localhost:8080/api/Cabin/all",
+        url:"http://144.22.57.199:8080/api/Cabin/all",
         //url: "http://localhost:8080/api/Skate/all",
         type: "GET",
         datatype: "JSON",
@@ -101,14 +101,14 @@ function pintarRespuestaCabin(response){
   }
   else
     {
-        alert("No Hay Resulta")
+        alert("No Hay Resulta"+response.length)
     }
 }
 //Capturar informacion para Actualizar
 function cargarDatosCabana(id) {
     $.ajax({
         dataType: 'json',
-        url:"http://localhost:8080/api/Cabin/"+id,
+        url:"http://144.22.57.199:8080/api/Cabin/"+id,
         //url: "http://localhost:8080/api/Skate/" + id,
         type: 'GET',
 
@@ -150,7 +150,7 @@ function agregarCabana() {
             $.ajax({
                 type: "POST",
                 contentType: "application/json",
-                url:"http://localhost:8080/api/Cabin/save",
+                url:"http://144.22.57.199:8080/api/Cabin/save",
                 //url: "http://localhost:8080/api/Skate/save",
                 data: dataToSend,
                 datatype: 'json',
@@ -188,7 +188,7 @@ console.log(dataToSend);
         {
             dataType: 'json',
             data: dataToSend,
-            url:"http://localhost:8080/api/Cabin/"+idElemento,
+            url:"http://144.22.57.199:8080/api/Cabin/"+idElemento,
             //url: "http://localhost:8080/api/Skate/" + idElemento,
             type: 'DELETE',
             contentType: "application/JSON",
@@ -227,7 +227,7 @@ function actualizar(idElemento) {
             datatype: 'json',
             data: dataToSend,
             contentType: "application/JSON",
-            url:"http://localhost:8080/api/Cabin/update",
+            url:"http://144.22.57.199:8080/api/Cabin/update",
             //url: "http://localhost:8080/api/Skate/update",
             type: "PUT",
 
